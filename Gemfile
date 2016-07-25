@@ -24,3 +24,9 @@ source 'https://rubygems.org'
  gem 'jquery-rails'
  # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
  gem 'turbolinks'
+ # Devise is a Ruby gem that is a flexible authentication solution for Rails with Warden.
+ gem 'devise'
+ # The Figaro gem provides an elegant solution for handling sensitive data with environment variables.
+ gem 'figaro', '1.0'
+ # Bootstrap is one of the most popular CSS frameworks. It provides layouts, forms, buttons, icons, Javascript functions, and more.
+ gem 'bootstrap-sass'
