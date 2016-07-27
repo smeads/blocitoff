@@ -30,3 +30,5 @@ source 'https://rubygems.org'
  gem 'figaro', '1.0'
  # Bootstrap is one of the most popular CSS frameworks. It provides layouts, forms, buttons, icons, Javascript functions, and more.
  gem 'bootstrap-sass'
+ # This gem is a port of Perl's Data::Faker library that generates fake data.
+ gem 'faker'
