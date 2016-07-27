@@ -6,26 +6,14 @@
 <table class="table table-striped table-hover">
   <thead>
     <tr>
-      <th>Header column 1</th>
-      <th>Header column 2</th>
+      <th>To do item</th>
+      <th>Days left to complete</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>this is my content</td>
-      <td>this is my content for column 2</td>
-    </tr>
-    <tr>
-      <td>this is my content</td>
-      <td>this is my content for column 2</td>
-    </tr>
-    <tr>
-      <td>this is my content</td>
-      <td>this is my content for column 2</td>
-    </tr>
+    <%= render @items %>
   </tbody>
 </table>
-<!-- put an html table here -->
-<!-- put an html table row here with the header stuff -->
-<%# render current_user.items %>
-<!-- end whatever table stuff you started -->
+
+<%= render partial: "items/form" %>

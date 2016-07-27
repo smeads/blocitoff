@@ -1,0 +1,8 @@
+<h3>Add a to do item</h3>
+<%= form_for [current_user, @item] do |f| %>
+  <div class="form-group">
+   <%= f.label :name, class: 'sr-only' %>
+   <%= f.text_field :name, class: 'form-control', placeholder: "Enter a to do item here" %>
+ </div>
+   <%= f.submit "Save", class: 'btn btn-default pull-right'%>
+<% end %>
