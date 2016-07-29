@@ -5,4 +5,8 @@ class UsersController < ApplicationController
     @item = Item.new
   end
 
+private
+  def user_params
+    params.require(:user).permit(:is_private)
+  end
 end
