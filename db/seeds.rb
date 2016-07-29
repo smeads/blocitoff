@@ -12,7 +12,8 @@ require 'faker'
 5.times do
   User.create!(
   email: Faker::Internet.email,
-  password: Faker::Internet.password
+  password: Faker::Internet.password,
+  confirmed_at: Time.now
   )
 end
 users = User.all
@@ -20,7 +21,8 @@ users = User.all
 # Create Items
 10.times do
   Item.create!(
-  name: Faker::Internet.name
+  name: Faker::Name.name,
+  user: users.sample
   )
 end
 items = Item.all

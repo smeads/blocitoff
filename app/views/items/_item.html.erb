@@ -1,5 +1,5 @@
 <tr>
   <td><%= item.name %></td>
-  <td>checkpoint 8</td>
-  <td><%= link_to "Delete", [current_user, item], method: :delete, class: 'glyphicon glyphicon-ok' %></td>
+  <td><%= distance_of_time_in_words(Time.now, item.created_at + 7.days) %> left to complete!</td>
+  <td><%= link_to "Completed", [current_user, item], method: :delete, class: 'glyphicon glyphicon-ok' %></td>
 </tr>
