@@ -32,3 +32,5 @@ source 'https://rubygems.org'
  gem 'bootstrap-sass'
  # This gem is a port of Perl's Data::Faker library that generates fake data.
  gem 'faker'
+ # Whenever is a Ruby gem that provides a clear syntax for writing and deploying cron jobs.
+ gem 'whenever', :require => false
