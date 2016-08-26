@@ -17,3 +17,9 @@
 </table>
 
 <%= render partial: "items/form" %>
+
+<script type="text/javascript">
+     $(document).on("ready page:load", function () {
+        blocmetrics.report("Users Profile");
+      })
+</script>
