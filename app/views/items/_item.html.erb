@@ -3,3 +3,9 @@
   <td><%= distance_of_time_in_words(Time.now, item.created_at + 7.days) %> left to complete!</td>
   <td><%= link_to "Completed", [current_user, item], method: :delete, class: 'glyphicon glyphicon-ok' %></td>
 </tr>
+
+<script type="text/javascript">
+     $(document).on("ready page:load", function () {
+        blocmetrics.report("Item Completed");
+      })
+</script>
